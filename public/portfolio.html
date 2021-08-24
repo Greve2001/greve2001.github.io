@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.css"> <!-- Awesome fonts kit for icons -->
+        <link rel="stylesheet" href="resources/css/default.css">
+        <link rel="stylesheet" href="resources/css/portfolio.css">
+
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>  <!-- Import JQuery -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    </head>
+
+    <body>
+        <div id="navbar-placeholder"></div>  <!-- Navbar -->
+        <script>
+            $(function(){
+              $("#navbar-placeholder").load("page-elements/navbar.html");
+            }); </script>
+
+        <main id="main"> <!-- The main page content -->
+            <div class="portfolio">
+                <div class="port-explantion"><p>Explanation</p></div>
+                <div class="card-holder">
+
+                    <a href="connect_four.html" class="card">
+                        <div class="card-description">
+                            <h1>Connect Four</h1>
+                            <p>
+                                A small project to learn myself to use Python, aswell as to excersise myself in matrix and adjacent values in them.
+                                <br>
+                                I use arrays in arrays to form matrices, and use some logic to check adjacent values of a value
+                            </p>
+                        </div>
+                        <div class="project-window" >
+                            <img src="resources/images/projects/connect-four/terminal-matrix-output.jpg" alt="connect four project cover image">
+                        </div>
+                    </a>
+
+                    <a href="fitness-database.html" class="card">
+                        <div class="card-description">
+                            <h1>Internal Database - A fitness project</h1>
+                            <p>I made a small project to keep track of exercises. The project would have the potential to make a full-on training program. <br>The core of the project is a database, which is made internally and is stored on the computer</p>
+                            
+                        </div>
+                        <div class="project-window" >
+                            <img src="resources\images/projects/fitness/fitness.jpg" alt="SæSlaSki project cover image">
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </main>
+   </body>
+
+    <div id="footer-placeholder"></div>  <!-- Footer -->
+    <script>
+        $(function(){
+          $("#footer-placeholder").load("page-elements/footer.html");
+        }); </script>
+
+</html>
